@@ -7,6 +7,7 @@ function AppProvider ({children}){
 
     
         const[theme, setTheme]= useState('light')
+        const[searchTerm, setSearchTerm] = useState('cat')
       
     
     
@@ -16,7 +17,7 @@ function AppProvider ({children}){
 
 
 return(
-    <AppContext.Provider value={{theme, setTheme}}>
+    <AppContext.Provider value={{theme, setTheme, searchTerm, setSearchTerm}}>
       {children}
        
     </AppContext.Provider>
