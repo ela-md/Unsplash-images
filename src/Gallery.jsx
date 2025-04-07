@@ -40,7 +40,7 @@ function Gallery () {
   
 
   return(
-     <section className="imahe-container">
+     <section className="image-container">
        {results.map((item)=>{
           const url = item?.urls?.regular
           return  <img
